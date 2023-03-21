@@ -1,11 +1,12 @@
 -- customize mason plugins
+--
 return {
   -- use mason-lspconfig to configure LSP installations
   {
     "williamboman/mason-lspconfig.nvim",
     -- overrides `require("mason-lspconfig").setup(...)`
     opts = {
-      -- ensure_installed = { "lua_ls" },
+      ensure_installed = { "cssls", "html", "phpactor", "jsonls", "emmet_ls", "tailwindcss", "sqlls" },
     },
   },
   -- use mason-null-ls to configure Formatters/Linter installation for null-ls sources
